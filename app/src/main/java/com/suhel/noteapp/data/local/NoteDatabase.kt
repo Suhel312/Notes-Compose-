@@ -1,4 +1,4 @@
-package com.suhel.noteapp.room
+package com.suhel.noteapp.data.local
 
 import android.content.Context
 import androidx.room.Database
@@ -16,7 +16,7 @@ abstract class NoteDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: NoteDatabase? = null
 
-        val MIGRATION_1_2 = Migration(1,2) {
+        val MIGRATION_1_2 = Migration(1, 2) {
             fun migrate(database: SupportSQLiteDatabase) {
                 database.execSQL(
                     "ALTER TABLE notes ADD COLUMN isPinned INTEGER NOT NULL DEFAULT 0"

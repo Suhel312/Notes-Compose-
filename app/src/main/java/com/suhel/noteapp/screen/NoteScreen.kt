@@ -23,7 +23,7 @@ import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.suhel.noteapp.room.Note
+import com.suhel.noteapp.data.local.Note
 import com.suhel.noteapp.veiwmodel.NoteViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 

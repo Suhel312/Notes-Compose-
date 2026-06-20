@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.unit.dp
-import com.suhel.noteapp.room.Note
+import com.suhel.noteapp.data.local.Note
 
 @Composable
 fun NoteItem(note: Note){

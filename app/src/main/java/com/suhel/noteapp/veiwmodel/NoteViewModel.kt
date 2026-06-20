@@ -2,8 +2,8 @@ package com.suhel.noteapp.veiwmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.suhel.noteapp.repo.NoteRepository
-import com.suhel.noteapp.room.Note
+import com.suhel.noteapp.domain.repo.NoteRepository
+import com.suhel.noteapp.data.local.Note
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch

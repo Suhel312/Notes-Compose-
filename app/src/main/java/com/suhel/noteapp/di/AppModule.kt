@@ -2,7 +2,7 @@ package com.suhel.noteapp.di
 
 import android.content.Context
 import androidx.core.util.Consumer
-import com.suhel.noteapp.room.NoteDatabase
+import com.suhel.noteapp.data.local.NoteDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
