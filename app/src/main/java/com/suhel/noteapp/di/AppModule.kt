@@ -1,8 +1,10 @@
 package com.suhel.noteapp.di
 
 import android.content.Context
-import androidx.core.util.Consumer
+import com.suhel.noteapp.data.local.NoteDao
 import com.suhel.noteapp.data.local.NoteDatabase
+import com.suhel.noteapp.data.repo.NoteRepositoryImpl
+import com.suhel.noteapp.domain.repo.NoteRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,5 +24,9 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideNoteDao(noteDatabase: NoteDatabase) = noteDatabase.noteDao()
+    fun provideNoteDao(noteDatabase: NoteDatabase): NoteDao = noteDatabase.noteDao()
+
+    @Provides
+    @Singleton
+    fun provideNoteRepository(impl: NoteRepositoryImpl) : NoteRepository = impl
 }
